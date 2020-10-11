@@ -1,0 +1,23 @@
+{
+  "name": "imax-bienes-futuros",
+  "version": "1.0.0",
+  "description": "bienes-futuros",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LourdesMp/IMAX-Bienes-futuros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LourdesMp/IMAX-Bienes-futuros/issues"
+  },
+  "homepage": "https://github.com/LourdesMp/IMAX-Bienes-futuros#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  },
+  "dependencies": {}
+}
