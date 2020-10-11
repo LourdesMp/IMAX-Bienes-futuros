@@ -1,0 +1,80 @@
+.login{
+    background-image: url(../assets/fondo-login.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+
+    .logIn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius:15px;
+        background: rgba(160, 162, 159, 0.26);
+        width: 20%;
+        padding: 20px;
+        margin-right: 200px;
+        margin-top: 7%;
+        .logo-imax{
+            width: 90%;
+            margin: 20px;
+        }
+        .formulary{         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        // se usa para los 2 inputs
+        .box-user{
+            margin: 10px;
+            height: 30px;
+            width: 90%;
+            border-radius: 25px;
+            border: 2px solid #23B6B6;
+            display: flex;
+            background-color: #fff;
+            align-items: center;
+            .user{
+                color: #0C0B2D;
+                font-size: 15px;
+                background-color: transparent;
+                padding-left: 10px;
+                height: 100%;
+                width: 100%;
+                border: 0;
+                border-left: 1px solid #23B6B6;
+                outline: none;
+                
+            }
+            .user-icon{
+                font-size: 1.2rem;
+                color: rgb(175, 175, 175);
+                margin: 0 10px;
+              }
+        }
+        .btn-login{
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+            margin: 15px;
+            background-color: #00AFEF;
+            height: 40px;
+            width: 60%;
+            border-radius: 25px;
+            border: 0;
+        }
+       
+        }
+        p {
+            box-sizing: content-box;
+            font-size: 15px;
+            color: #0C0B2D;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
