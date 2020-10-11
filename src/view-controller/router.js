@@ -8,8 +8,8 @@ const changeView = (hash) => {
     case '': 
     case '#':
     case '#/':
-       { return sectionMain.appendChild(components.ingreso()); }
-    case '#/registro':
+       { return sectionMain.appendChild(components.login()); }
+    case '#/register':
        { return sectionMain.appendChild(components[id]()); }
     default: 
         return sectionMain.appendChild(components.diferent());
