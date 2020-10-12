@@ -1,0 +1,108 @@
+.box-tasacion{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85%;
+    font-family: 'Roboto', sans-serif;
+    .head-list{
+        background: #ffff;
+        width: 98%;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 1%;
+        
+        .title-list{
+            color: #A0A29F;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    .body-list{
+        background: rgba(225, 249, 241, 0.83);
+        width: 98%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+
+        .title-tasacion{
+            font-weight: bold;
+        }
+
+        input{
+            border: none;
+            height: 20px;
+            color: #fafafa;
+        }
+
+        label{
+            font-size: 15px;
+        }
+
+        .search-list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+
+            .box-first{
+                margin-right: 150px;
+              
+            }
+           
+        }
+        .box-second{
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+           .search-input{
+               margin-right: 5px;
+           }
+        }
+        .datos-inmueble{
+            border:  1px solid #D3D3D3;
+            padding: 10px;
+        }
+        .table-list{
+            background:  #FAFAFA;
+            width: 98%;
+            margin: 1%;
+            th{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+                background-color: #E5E5E5;
+                color: black;
+            }
+
+            td{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: black;
+            }
+        }
+        .box-btn{
+        width: 90%;
+        margin: 20px;
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+            .btn-guardarT, .btn-cancelar{
+                color: #fff;
+                font-size: 1.1rem;
+                font-weight: 500;
+                background-color: #009AD2;
+                height: 30px;
+                width: 20%;
+                border-radius: 5px;
+                border: 0;
+        }
+        }
+      
+    }
+}

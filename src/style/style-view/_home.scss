@@ -27,12 +27,23 @@ header{
     color: #ffffff;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-  
+    display:block;
   }
+}
+nav li ul{
+    display:none;
+    position:absolute;
+    list-style: none;
+}
+        
+nav li:hover ul{
+    display:block;
 }
 
 header nav a:hover{
-    background: rgba(196, 196, 196, 0.78);;
+    background: rgba(98, 151, 190, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.3);
+box-sizing: border-box;
 }
 
 .box-body{
@@ -66,7 +77,7 @@ header nav a:hover{
 
         .paragraph{
             color: #ffffff;
-            font-weight: 200;
+            font-weight: 400;
         }
     }
 }

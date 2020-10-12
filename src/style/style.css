@@ -259,10 +259,24 @@ header nav a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+}
+
+nav li:hover ul {
+  display: block;
 }
 
 header nav a:hover {
-  background: rgba(196, 196, 196, 0.78);
+  background: rgba(98, 151, 190, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box-body {
@@ -312,7 +326,7 @@ header nav a:hover {
 
 .box-body .presentation .paragraph {
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .box-profile {
@@ -364,11 +378,18 @@ header nav a:hover {
   margin-right: 10px;
 }
 
-.box-profile .box-user input, .box-profile .box-user select {
+.box-profile .box-user input {
   border-radius: 5px;
-  border: solid 2px #23B6B6;
+  border: solid 1px #23B6B6;
   width: 70%;
   height: 30px;
+}
+
+.box-profile .box-user select {
+  border-radius: 5px;
+  border: solid 1px #23B6B6;
+  width: 70%;
+  height: 33px;
 }
 
 .box-profile .box-btn {
@@ -396,6 +417,434 @@ header nav a:hover {
   background-color: #009AD2;
   height: 35px;
   width: 30%;
+  border-radius: 5px;
+  border: 0;
+}
+
+.box-bodyList {
+  background-image: url(../assets/fondo-project.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-bodyList .box-listProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 65%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.box-bodyList .box-listProjects .user-upload {
+  background: green;
+  margin-right: 5px;
+}
+
+.box-bodyList .box-listProjects .user-down {
+  background: #ffe346;
+  margin-right: 5px;
+}
+
+.box-bodyList .box-listProjects .user-remove {
+  background: red;
+  margin-right: 5px;
+}
+
+.box-bodyList .box-listProjects .head-list {
+  background: #ffff;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 1%;
+}
+
+.box-bodyList .box-listProjects .head-list .title-list {
+  color: #A0A29F;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.box-bodyList .box-listProjects .head-list .leyenda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.box-bodyList .box-listProjects .head-list .leyenda .icon-leyenda {
+  margin: 0 20px;
+}
+
+.box-bodyList .box-listProjects .body-list {
+  background: rgba(225, 249, 241, 0.83);
+  width: 98%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1%;
+}
+
+.box-bodyList .box-listProjects .body-list .search-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.box-bodyList .box-listProjects .body-list .search-list p {
+  margin: 10px 0;
+}
+
+.box-bodyList .box-listProjects .body-list .search-list .box-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.box-bodyList .box-listProjects .body-list .search-list .box-search input {
+  margin: 0 10px;
+  height: 20px;
+}
+
+.box-bodyList .box-listProjects .body-list .search-list .box-search .btn-search {
+  color: #fff;
+  font-size: 1.0rem;
+  font-weight: 500;
+  background-color: #009AD2;
+  height: 25px;
+  margin-left: 50px;
+  width: 10%;
+  border-radius: 5px;
+  border: 0;
+}
+
+.box-bodyList .box-listProjects .body-list .table-list {
+  background: #FAFAFA;
+  width: 98%;
+  margin: 1%;
+}
+
+.box-bodyList .box-listProjects .body-list .table-list th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #E5E5E5;
+  color: black;
+}
+
+.box-bodyList .box-listProjects .body-list .table-list td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: black;
+}
+
+.box-bodyList .box-listProjects .body-list .btn-newTasacion {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #009AD2;
+  height: 35px;
+  margin-left: 40%;
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.box-newProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  background: #C4C4C4;
+  width: 28%;
+  height: 50%;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+}
+
+.box-newProject .title {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.box-newProject .box-user {
+  width: 90%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-weight: 500;
+}
+
+.box-newProject .box-user label {
+  margin-right: 10px;
+}
+
+.box-newProject .box-user input {
+  border-radius: 5px;
+  border: solid 1px #23B6B6;
+  width: 70%;
+  height: 27px;
+}
+
+.box-newProject .box-user select {
+  border-radius: 5px;
+  border: solid 1px #23B6B6;
+  width: 70%;
+  height: 30px;
+}
+
+.box-newProject .box-btn {
+  width: 90%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.box-newProject .box-btn .btn-guardar, .box-newProject .box-btn .btn-cancelar {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  background-color: #009AD2;
+  height: 35px;
+  width: 30%;
+  border-radius: 5px;
+  border: 0;
+}
+
+.box-tasacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 85%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.box-tasacion .head-list {
+  background: #ffff;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 1%;
+}
+
+.box-tasacion .head-list .title-list {
+  color: #A0A29F;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.box-tasacion .body-list {
+  background: rgba(225, 249, 241, 0.83);
+  width: 98%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1%;
+}
+
+.box-tasacion .body-list .title-tasacion {
+  font-weight: bold;
+}
+
+.box-tasacion .body-list input {
+  border: none;
+  height: 20px;
+  color: #fafafa;
+}
+
+.box-tasacion .body-list label {
+  font-size: 15px;
+}
+
+.box-tasacion .body-list .search-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box-tasacion .body-list .search-list .box-first {
+  margin-right: 150px;
+}
+
+.box-tasacion .body-list .box-second {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box-tasacion .body-list .box-second .search-input {
+  margin-right: 5px;
+}
+
+.box-tasacion .body-list .datos-inmueble {
+  border: 1px solid #D3D3D3;
+  padding: 10px;
+}
+
+.box-tasacion .body-list .table-list {
+  background: #FAFAFA;
+  width: 98%;
+  margin: 1%;
+}
+
+.box-tasacion .body-list .table-list th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #E5E5E5;
+  color: black;
+}
+
+.box-tasacion .body-list .table-list td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: black;
+}
+
+.box-tasacion .body-list .box-btn {
+  width: 90%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-tasacion .body-list .box-btn .btn-guardarT, .box-tasacion .body-list .box-btn .btn-cancelar {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #009AD2;
+  height: 30px;
+  width: 20%;
   border-radius: 5px;
   border: 0;
 }
