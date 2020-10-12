@@ -10,6 +10,8 @@ const changeView = (hash) => {
     case '#/':
        { return sectionMain.appendChild(components.login()); }
     case '#/register':
+    case '#/home':
+    case '#/perfil':   
        { return sectionMain.appendChild(components[id]()); }
     default: 
         return sectionMain.appendChild(components.diferent());
