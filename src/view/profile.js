@@ -8,7 +8,11 @@ export default () => {
                 <a class="profile" href="#/perfil">Perfil</a>
             </li>
             <li>
-                <a class ="fut-assets" href="#/bienes">Bienes Futuros</a>
+                <a class ="fut-assets" href="#/home">Bienes Futuros</a>
+                <ul>
+                    <li><a href="#/lista">Proyectos</a></li>
+                    <li><a href="#/nuevo">Nuevo Proyectos</a></li>     
+                </ul>
             </li>
             <li>
             <a class="logOut">Cerrar Sesion <i class="fas fa-sign-out-alt"></i></a>
