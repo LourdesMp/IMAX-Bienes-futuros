@@ -1,0 +1,61 @@
+.box-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:9px;
+    background: rgba(244, 255, 251, 0.71);;
+    width: 28%;
+    height: 60%;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    
+   
+    .title{
+        font-size: 25px;
+        font-weight: 400;
+        margin: 10px;
+        
+    }
+    .box-user{
+        width: 90%;
+        margin: 10px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        font-weight: 500;
+
+        label{
+           margin-right: 10px;
+        }
+
+        input, select {
+            border-radius: 5px;
+            border: solid 2px #23B6B6;
+            width: 70%;
+            height: 30px;
+        }
+    }
+
+    .box-btn{
+        width: 90%;
+        margin: 20px;
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+
+        .btn-guardar, .btn-cancelar{
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 15px;
+            background-color: #009AD2;
+            height: 35px;
+            width: 30%;
+            border-radius: 5px;
+            border: 0;
+        }
+    }
+}

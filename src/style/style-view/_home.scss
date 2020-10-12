@@ -1,0 +1,72 @@
+header{
+    background: #225075;
+    height: 10vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    position: sticky;
+        top:0;
+        z-index: 1;
+   
+
+  .logo-imax{
+      margin-left: 20px;
+  }
+  .menubar{
+    list-style: none;
+    display: flex;
+    width: 500px;
+    
+  }
+  
+  nav a {
+    padding: 20px;
+    font-size: 20px;
+    font-weight:700;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+}
+
+header nav a:hover{
+    background: rgba(196, 196, 196, 0.78);;
+}
+
+.box-body{
+    background-image: url(../assets/fondo-home.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        background: rgba(0,0,0,.55);
+        width: 40%;
+        height: 40%;
+        padding: 15px 30px;
+
+        .title{
+            color: #008FF1;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+        }
+
+        .paragraph{
+            color: #ffffff;
+            font-weight: 200;
+        }
+    }
+}
