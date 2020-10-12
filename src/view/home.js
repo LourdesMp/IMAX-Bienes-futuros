@@ -25,7 +25,8 @@ export default () => {
             <p class="title">Evaluación y Monitoreo de Proyectos</p>
             <p class="paragraph">Evaluamos y Monitoreamos proyectos para asesorar promotores inmobiliarios, inversionistas, empresas e instituciones financieras brindando herramientas de analisis y seguimiento que permitan invertir  o financiar de forma segura; nuestro equipo es especialista 
             en analizar la viabilidad del proyecto y en el control de los flujos, 
-            de tiempo, seguridad, calidad y costo del proyecto y obra SERVICIOS 
+            de tiempo, seguridad, calidad y costo del proyecto y obra
+            SERVICIOS 
             Monitoreo de Proyectos (Supervisiones Financieras).
             Estudios Técnico-Comerciales (Pre factibilidades, Viabilidades, Estudios de Situación, etc</p>
         </div>
