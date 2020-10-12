@@ -11,7 +11,10 @@ const changeView = (hash) => {
        { return sectionMain.appendChild(components.login()); }
     case '#/register':
     case '#/home':
-    case '#/perfil':   
+    case '#/perfil': 
+    case '#/lista': 
+    case '#/nuevo':  
+    case '#/tasacion':  
        { return sectionMain.appendChild(components[id]()); }
     default: 
         return sectionMain.appendChild(components.diferent());
