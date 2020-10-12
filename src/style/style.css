@@ -218,6 +218,188 @@
   font-family: 'Roboto', sans-serif;
 }
 
+header {
+  background: #225075;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .logo-imax {
+  margin-left: 20px;
+}
+
+header .menubar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+}
+
+header nav a {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+header nav a:hover {
+  background: rgba(196, 196, 196, 0.78);
+}
+
+.box-body {
+  background-image: url(../assets/fondo-home.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-body .presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(0, 0, 0, 0.55);
+  width: 40%;
+  height: 40%;
+  padding: 15px 30px;
+}
+
+.box-body .presentation .title {
+  color: #008FF1;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.box-body .presentation .paragraph {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.box-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  background: rgba(244, 255, 251, 0.71);
+  width: 28%;
+  height: 60%;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+}
+
+.box-profile .title {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.box-profile .box-user {
+  width: 90%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-weight: 500;
+}
+
+.box-profile .box-user label {
+  margin-right: 10px;
+}
+
+.box-profile .box-user input, .box-profile .box-user select {
+  border-radius: 5px;
+  border: solid 2px #23B6B6;
+  width: 70%;
+  height: 30px;
+}
+
+.box-profile .box-btn {
+  width: 90%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.box-profile .box-btn .btn-guardar, .box-profile .box-btn .btn-cancelar {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  background-color: #009AD2;
+  height: 35px;
+  width: 30%;
+  border-radius: 5px;
+  border: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
