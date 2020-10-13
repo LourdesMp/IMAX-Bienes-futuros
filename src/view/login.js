@@ -9,6 +9,7 @@ export default () => {
       <div class="formulary">
         <div class="box-user"> <i class="user-icon fas fa-user"> </i><input class="emailLogin user" type="email" placeholder="Correo Electrónico" required>   </div>
         <div class="box-user"> <i class="user-icon fas fa-lock"> </i><input class="passwordLogin user" type="password" placeholder="Contraseña" required>  </div>       
+        <div class="reg_error_inner" id="reg_error_inner"></div>
         <button type="submit" class= "btn-login"> Ingresar </button>
       </div>
       <p class="p-Options">¿No tienes cuenta? <a class="register"  href="#/register">Regístrate</a> </p>
@@ -31,6 +32,14 @@ export default () => {
         signInForm.reset();
         console.log('vas bien en esta tambien')
         changeView('#/home')
+      }).catch((error)=>{
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        if (errorCode === 'auth/wrong-password') {
+          sectionElem.querySelector('#reg_error_inner').innerHTML = 'Contraseña incorrecta.';
+        } else {
+          sectionElem.querySelector('#reg_error_inner').innerHTML = errorMessage;
+        }
       })
   })
   
