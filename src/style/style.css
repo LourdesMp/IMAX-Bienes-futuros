@@ -88,6 +88,13 @@
   margin: 0 10px;
 }
 
+.login .logIn .formulary .reg_error_inner {
+  border-radius: 15px;
+  background: #b67373;
+  color: #ad0000;
+  font-size: 18px;
+}
+
 .login .logIn .formulary .btn-login {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -196,6 +203,13 @@
   font-size: 1.2rem;
   color: #afafaf;
   margin: 0 10px;
+}
+
+.form-register .box-register .formulary .reg_error_inner {
+  border-radius: 15px;
+  background: #b67373;
+  color: #ad0000;
+  font-size: 18px;
 }
 
 .form-register .box-register .formulary .btn-register {

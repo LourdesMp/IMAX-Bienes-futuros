@@ -1,3 +1,4 @@
+import { changeView } from '../view-controller/router.js';
 export default () => {
     const viewProfile = `
     <header>
@@ -42,5 +43,15 @@ export default () => {
     const divElem = document.createElement('div');
     divElem.className = 'form-profile';
     divElem.innerHTML = viewProfile;
+
+    const auth = firebase.auth();
+    const logOut = divElem.querySelector('.logOut');
+    logOut.addEventListener('click', e => {
+        e.preventDefault();
+        auth.signOut().then(() => {
+            changeView('#/');
+            console.log('saliste')
+        })
+    })
     return divElem;
   };

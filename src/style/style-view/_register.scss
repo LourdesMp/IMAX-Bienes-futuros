@@ -56,7 +56,16 @@
                 color: rgb(175, 175, 175);
                 margin: 0 10px;
               }
+
+            
         }
+
+        .reg_error_inner{       
+            border-radius: 15px;
+            background: #b67373;
+            color: rgb(173, 0, 0);
+            font-size: 18px;
+          }  
         .btn-register{
             color: #fff;
             font-family: 'Roboto', sans-serif;

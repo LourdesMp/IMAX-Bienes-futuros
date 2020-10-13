@@ -1,3 +1,4 @@
+import { changeView } from '../view-controller/router.js';
 export default () => {
     const viewListProjects = `
     <header>
@@ -83,5 +84,15 @@ export default () => {
     const sectionElem = document.createElement('section');
     sectionElem.className = 'form-listProjects';
     sectionElem.innerHTML = viewListProjects;
+
+    const auth = firebase.auth();
+    const logOut = sectionElem.querySelector('.logOut');
+    logOut.addEventListener('click', e => {
+        e.preventDefault();
+        auth.signOut().then(() => {
+            changeView('#/');
+            console.log('saliste')
+        })
+    })
     return sectionElem;
   };
